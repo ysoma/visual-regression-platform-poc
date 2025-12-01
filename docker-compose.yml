@@ -1,0 +1,82 @@
+version: '3.8'
+
+services:
+  orchestrator:
+    build:
+      context: .
+      dockerfile: services/orchestrator/Dockerfile
+    ports:
+      - "50051:50051" # gRPC
+      - "8080:8080"   # HTTP API
+    depends_on:
+      - postgres
+      - minio
+    environment:
+      - DATABASE_URL=postgres://user:password@postgres:5432/dd
+      - S3_ENDPOINT=http://minio:9000
+      - S3_BUCKET=screenshots
+
+  worker:
+    build:
+      context: ./services/worker
+      dockerfile: Dockerfile
+    depends_on:
+      - orchestrator
+    environment:
+      - ORCHESTRATOR_URL=http://orchestrator:50051
+
+  diff-service:
+    build:
+      context: .
+      dockerfile: services/diff-service/Dockerfile
+    ports:
+      - "50052:50052"
+    environment:
+      - S3_ENDPOINT=http://minio:9000
+
+  report-service:
+    build:
+      context: .
+      dockerfile: services/report-service/Dockerfile
+    ports:
+      - "3001:3001"
+    depends_on:
+      - postgres
+    environment:
+      - DATABASE_URL=postgres://user:password@postgres:5432/dd
+
+  frontend:
+    build:
+      context: ./services/frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - report-service
+
+  postgres:
+    image: postgres:15-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=dd
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  minio:
+    image: minio/minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      - MINIO_ROOT_USER=minioadmin
+      - MINIO_ROOT_PASSWORD=minioadmin
+    command: server /data --console-address ":9001"
+    volumes:
+      - minio_data:/data
+
+volumes:
+  postgres_data:
+  minio_data:

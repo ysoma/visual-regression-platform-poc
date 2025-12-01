@@ -1,0 +1,29 @@
+# Build outputs
+dist/
+*.js.map
+*.d.ts
+
+# Dependencies
+node_modules/
+
+# Test outputs
+coverage/
+playwright-report/
+test-results/
+.playwright-mcp/
+
+# Data
+data/
+
+# Lockfiles
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

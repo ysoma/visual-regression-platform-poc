@@ -1,0 +1,2 @@
+fn(State<AppState>, axum::extract::Path<Uuid>) -> impl std::future::Future<Output = &'static str> {get_report}
+fn(State<AppState>, axum::extract::Path<Uuid>) -> impl std::future::Future<Output = &'static str> {get_report}: Handler<_, _>

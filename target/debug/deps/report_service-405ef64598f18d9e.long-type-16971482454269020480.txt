@@ -1,0 +1,2 @@
+fn(State<Arc<AppState>>, axum::extract::Path<Uuid>) -> impl std::future::Future<Output = axum::Json<Vec<Screenshot>>> {get_report}
+fn(State<Arc<AppState>>, axum::extract::Path<Uuid>) -> impl std::future::Future<Output = axum::Json<Vec<Screenshot>>> {get_report}: Handler<_, _>

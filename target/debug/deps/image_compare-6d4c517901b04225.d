@@ -1,0 +1,11 @@
+/home/ysoma/Projects/dd/target/debug/deps/image_compare-6d4c517901b04225.d: /home/ysoma/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/image-compare-0.5.0/src/lib.rs /home/ysoma/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/image-compare-0.5.0/src/colorization.rs /home/ysoma/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/image-compare-0.5.0/src/histogram.rs /home/ysoma/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/image-compare-0.5.0/src/hybrid.rs /home/ysoma/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/image-compare-0.5.0/src/squared_error.rs /home/ysoma/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/image-compare-0.5.0/src/ssim.rs /home/ysoma/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/image-compare-0.5.0/src/utils.rs
+
+/home/ysoma/Projects/dd/target/debug/deps/libimage_compare-6d4c517901b04225.rmeta: /home/ysoma/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/image-compare-0.5.0/src/lib.rs /home/ysoma/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/image-compare-0.5.0/src/colorization.rs /home/ysoma/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/image-compare-0.5.0/src/histogram.rs /home/ysoma/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/image-compare-0.5.0/src/hybrid.rs /home/ysoma/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/image-compare-0.5.0/src/squared_error.rs /home/ysoma/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/image-compare-0.5.0/src/ssim.rs /home/ysoma/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/image-compare-0.5.0/src/utils.rs
+
+/home/ysoma/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/image-compare-0.5.0/src/lib.rs:
+/home/ysoma/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/image-compare-0.5.0/src/colorization.rs:
+/home/ysoma/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/image-compare-0.5.0/src/histogram.rs:
+/home/ysoma/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/image-compare-0.5.0/src/hybrid.rs:
+/home/ysoma/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/image-compare-0.5.0/src/squared_error.rs:
+/home/ysoma/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/image-compare-0.5.0/src/ssim.rs:
+/home/ysoma/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/image-compare-0.5.0/src/utils.rs:

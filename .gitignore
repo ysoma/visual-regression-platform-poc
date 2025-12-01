@@ -1,0 +1,113 @@
+# ============================================
+# Node.js
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.npm/
+.yarn/
+.pnp.*
+
+# ============================================
+# TypeScript
+# ============================================
+dist/
+*.tsbuildinfo
+**/*.tsbuildinfo
+
+# ============================================
+# Environment Variables
+# ============================================
+.env
+.env.local
+.env.*.local
+
+# ============================================
+# Test & Coverage
+# ============================================
+coverage/
+.jest-cache/
+*.test.js
+*.spec.js
+
+# Test results and reports
+test-results/
+playwright-report/
+.playwright-mcp/
+
+# Test snapshots
+*.snapshots/*
+
+# Exclude image files in the tests folder
+tests/**/*.png
+tests/**/*.jpg
+tests/**/*.jpeg
+
+# ============================================
+# Logs
+# ============================================
+*.log
+logs/
+pids/
+
+# ============================================
+# PM2 Process Manager
+# ============================================
+pm2-*.json
+.pm2/
+
+# ============================================
+# IDE & Editors
+# ============================================
+.vscode/
+.idea/
+.project
+.settings/
+*.swp
+*.swo
+*~
+
+# ============================================
+# OS Generated Files
+# ============================================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ============================================
+# Temporary & Backup Files
+# ============================================
+*.tmp
+*.temp
+*.backup
+*.bak
+
+# ============================================
+# Security & Credentials
+# ============================================
+secrets/
+*.pem
+*.key
+*.cert
+.npmrc
+
+# ============================================
+# Project Specific
+# ============================================
+
+# Workflow test results and reports (unified workflow system)
+results/
+
+# Data directory (local runtime data - use data-examples/ as template)
+data/
+
+
+# ============================================
+# Others
+# ============================================
+docs/
+
+legacy/
