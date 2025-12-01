@@ -1,5 +1,7 @@
 # Visual Regression Testing Platform (Rust + Microservices)
 
+⚠️ Note: This project is a Proof of Concept (PoC) to explore the ideal architecture for high-scale VRT. Implemented with the assistance of AI to validate the feasibility of the Rust + Playwright microservices pattern.
+
 A high-performance, scalable visual regression testing platform built with **Rust**, **TypeScript**, **Docker**, and **Next.js**.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
